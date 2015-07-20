@@ -43,6 +43,7 @@ Example Playbook
   roles:
     - homebrew
     - homebrew-cask
+    - hnakamur.atom-packages
   vars:
     # Tap external Homebrew repositories.
     #
@@ -92,6 +93,15 @@ Example Playbook
       - slack
       - vagrant
       - virtualbox
+      - atom
+
+    # Managed Atom packages
+    #
+    # e.g.
+    # - package_name
+    atom_packages_packages:
+      - project-manager
+      - recent-files
 ```
 
 
