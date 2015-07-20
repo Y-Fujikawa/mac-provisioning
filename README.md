@@ -22,6 +22,9 @@ brew install ansible
 # setting Homebrew Cask
 echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.bash_profile
 source ~/.bash_profile
+
+# setting Atom Packages
+ansible-galaxy install --roles-path=. hnakamur.atom-packages 
 ```
 
 1. clone this repository.

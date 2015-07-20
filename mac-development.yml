@@ -6,6 +6,7 @@
     - homebrew
     - homebrew-cask
     - ruby-build
+    - hnakamur.atom-packages
   vars:
     # Tap external Homebrew repositories.
     #
@@ -68,3 +69,11 @@
       - vagrant
       - virtualbox
       - atom
+
+    # Managed Atom packages
+    #
+    # e.g.
+    # - package_name
+    atom_packages_packages:
+      - project-manager
+      - recent-files
