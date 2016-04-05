@@ -24,7 +24,7 @@ echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.bash_profile
 source ~/.bash_profile
 
 # setting Atom Packages
-ansible-galaxy install --roles-path=. hnakamur.atom-packages 
+ansible-galaxy install --roles-path=. hnakamur.atom-packages
 ```
 
 1. clone this repository.
@@ -39,7 +39,7 @@ Example Playbook
 - hosts: localhost
   connection: local
   gather_facts: no
-  sudo: no
+  become: no
   roles:
     - homebrew
     - homebrew-cask
